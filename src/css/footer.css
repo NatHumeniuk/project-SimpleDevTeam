@@ -1,0 +1,32 @@
+.footer{
+    padding: 36px 0 16px;
+    background-color: var(--brand-dark-blue-color);
+}
+
+.logo-icons-footer{
+    display: flex;
+}
+
+.nav-logo-footer{
+    display: flex;
+    align-items: center;
+}
+
+.logo-footer{
+    fill: var(--white-color);
+    width: 100px;
+    height: 16px;
+}
+
+.list-icons-footer{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-left: auto;
+}
+
+.icons-footer{
+    fill: var(--white-color);
+    width: 28px;
+    height: 28px;
+}
