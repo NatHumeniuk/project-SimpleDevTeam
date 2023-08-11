@@ -3,6 +3,13 @@
     background-color: var(--brand-dark-blue-color);
 }
 
+.container{
+    width: 100%;
+    max-width: 373px;
+    padding: 0 15px 0 15px;
+    margin: 0 auto 0 auto;
+}
+
 .logo-icons-footer{
     display: flex;
 }
@@ -12,10 +19,16 @@
     align-items: center;
 }
 
+.nav-logo-footer>a:hover .logo-footer,
+.nav-logo-footer>a:hover .logo-footer{
+    fill: var(--light-gray-color);
+}
+
 .logo-footer{
     fill: var(--white-color);
     width: 100px;
     height: 16px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-icons-footer{
@@ -25,10 +38,16 @@
     margin-left: auto;
 }
 
+.link-icons-footer:hover .icons-footer,
+.link-icons-footer:focus .icons-footer{
+    fill: var(--light-gray-color);
+}
+
 .icons-footer{
     fill: var(--white-color);
     width: 28px;
     height: 28px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-navigation-footer{
@@ -43,4 +62,62 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-footer:hover,
+.navigation-footer:focus{
+    color: var(--light-gray-color);
+}
+
+.address-footer{
+    margin-top: 36px;
+}
+
+.link-address-footer{
+    color: var(--white-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.16px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-address-footer:hover,
+.link-address-footer:focus{
+    color: var(--light-gray-color);
+}
+
+.tel-footer{
+    margin-top: 35px;
+}
+
+.mail{
+    display: none;
+    pointer-events: none;
+    cursor: default;
+    position: absolute;
+}
+
+.text-footer{
+    opacity: 0.6;
+    color: var(--white-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    letter-spacing: 1.188px;
+    text-align: center;
+    margin-top: 64px;
+}
+
+.link-text-footer{
+    text-decoration-line: underline;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-text-footer:hover, 
+.link-text-footer:focus{
+    color: var(--light-gray-color);
 }
