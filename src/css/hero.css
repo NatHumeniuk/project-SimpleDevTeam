@@ -1,1 +1,35 @@
-
+.h1-hero {
+  padding-top: 140px;
+  color: var(--brand-dark-blue-color);
+  font-family: Playfair Display;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  text-transform: uppercase;
+  width: 285px;
+  margin-bottom: 14px;
+}
+.p-hero {
+  margin-bottom: 28px;
+  color: var(--brand-dark-blue-color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  width: 343px;
+}
+.hero-buttom {
+  background-color: var(--brand-dark-blue-color);
+  color: #fff;
+  width: 224px;
+  padding: 12px 65px;
+}
+.hero {
+  padding-left: 16px;
+  background-image: url(../img/hero/hero_mob.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 717px;
+}

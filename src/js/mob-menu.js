@@ -15,13 +15,13 @@
         document.body.classList.add('no-scroll');
         refs.Menu.classList.add("slide-out-right");
         // Змінити іконку на хрестик
-        refs.menuToggle.querySelector("use").setAttribute("href", "/src/img/svg-icon.svg#icon-close");
+        refs.menuToggle.querySelector("use").setAttribute("href", "../img/svg-icon.svg#icon-close");
       } else {
         // Закриття меню без анімації
         refs.Menu.classList.add("is-hidden");
         document.body.classList.remove('no-scroll');
         // Змінити іконку на бургер
-        refs.menuToggle.querySelector("use").setAttribute("href", "/src/img/svg-icon.svg#icon-burger");
+        refs.menuToggle.querySelector("use").setAttribute("href", "./img/svg-icon.svg#icon-burger");
       }
     }
   })();
