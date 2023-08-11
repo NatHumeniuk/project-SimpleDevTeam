@@ -5,7 +5,7 @@
 
 .container{
     width: 100%;
-    max-width: 373px;
+    max-width: 375px;
     padding: 0 15px 0 15px;
     margin: 0 auto 0 auto;
 }
@@ -120,4 +120,17 @@
 .link-text-footer:hover, 
 .link-text-footer:focus{
     color: var(--light-gray-color);
+}
+
+
+
+@media (min-width:768px){
+    .container{
+        max-width: 734px;
+    }
+
+    .logo-footer{
+        width: 127px;
+        margin-top: 12px;
+    }
 }
