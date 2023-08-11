@@ -1,5 +1,4 @@
-.about-us {
-}
+
 .container {
   max-width: 375px;
   margin: 0 auto;
@@ -43,9 +42,6 @@
   margin-bottom: 30px;
 }
 .about-us-results {
-  /* display: flex;
-    align-items: center;
-    ; */
   text-align: center;
 }
 .list-about-us {
@@ -54,8 +50,7 @@
   align-items: flex-start;
   gap: 30px;
 }
-.item-about-us {
-}
+
 .title-about-us-item {
   color: var(--brand-dark-blue-color);
   text-align: center;
@@ -122,7 +117,7 @@
     margin-bottom: 0;
     max-width: 760px;
   }
-  .container-about-us {
+  .container-desktop {
     display: flex;
     align-items: center;
     gap: 24px;
