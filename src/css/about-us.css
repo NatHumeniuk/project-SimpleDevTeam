@@ -1,0 +1,135 @@
+
+.container {
+  max-width: 375px;
+  margin: 0 auto;
+}
+.about-us-container {
+  background-color: var(--light-blue-color);
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.title-about-us {
+  display: flex;
+  color: var(--brand-dark-blue-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.title-about-us::before {
+  content: '';
+  width: 30px;
+  height: 1px;
+  background-color: var(--brand-dark-blue-color);
+  margin-right: 20px;
+}
+.title-about-us-secondary {
+  color: var(--brand-dark-blue-color);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.taxt-about-us {
+  color: var(--brand-dark-blue-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.about-us-results {
+  text-align: center;
+}
+.list-about-us {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.title-about-us-item {
+  color: var(--brand-dark-blue-color);
+  text-align: center;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  max-width: 170px;
+  margin-bottom: 14px;
+}
+.taxt-about-us-item {
+  color: var(--brand-dark-blue-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 170px;
+}
+.img-about-us {
+  max-width: 375px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+  }
+  .about-us-container {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    margin-bottom: 30px;
+  }
+
+  .title-about-us-secondary {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+  .taxt-about-us {
+    font-size: 18px;
+  }
+  .taxt-about-us-item {
+    font-size: 18px;
+  }
+  .list-about-us {
+    flex-direction: row;
+    gap: 33px;
+  }
+  .img-about-us {
+    max-width: 704px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+  .about-us-container {
+    padding-left: 69px;
+    padding-right: 69px;
+    padding-bottom: 34px;
+    margin-bottom: 0;
+    max-width: 760px;
+  }
+  .container-desktop {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+
+  .list-about-us {
+    flex-direction: row;
+    gap: 56px;
+  }
+  .img-about-us {
+    max-width: 536px;
+  }
+}
