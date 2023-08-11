@@ -30,3 +30,17 @@
     width: 28px;
     height: 28px;
 }
+
+.list-navigation-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 36px;
+}
+
+.navigation-footer{
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
