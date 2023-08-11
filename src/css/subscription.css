@@ -99,6 +99,14 @@
   .subscription-text {
     width: 343px;
   }
+
+  .subscription-input {
+    max-width: 343px;
+  }
+
+  .subscription-image {
+    width: 343px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -128,6 +136,10 @@
   .subscription-button {
     margin-bottom: 64px;
   }
+
+  .subscription-image {
+    width: 704px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -142,5 +154,10 @@
 
   .subscription-button {
     margin-bottom: 0;
+  }
+
+  .subscription-image {
+    width: 460px;
+    flex-shrink: 0;
   }
 }
