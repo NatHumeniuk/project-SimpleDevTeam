@@ -1,8 +1,94 @@
 <section class="subscription">
-  <div class="container">
-    <h2></h2>
-    <p></p>
-    <form></form>
-    <img src="" alt="" />
+  <div class="container desktop">
+    <div class="subscription-content">
+      <h2 class="subscription-title">Newsletter</h2>
+      <p class="subscription-text">
+        Every week we will send you new designs and information about sales.
+      </p>
+      <form class="subscription-form">
+        <div class="subscription-field">
+          <label class="subscription-label" for="user-name">
+            <input
+              required
+              class="subscription-input"
+              type="text"
+              name="user-name"
+              id="user-name"
+              placeholder="Name"
+              pattern="([a-zA-Zа-яА-ЯіІїЇёЁєЄ']{2,16})"
+            />
+            <svg class="subscription-input-icon" width="20" height="20">
+              <use href="./img/svg-icon.svg#icon-input-error"></use>
+            </svg>
+          </label>
+        </div>
+        <div class="subscription-field">
+          <label class="subscription-label" for="user-email">
+            <input
+              required
+              class="subscription-input"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder="E-mail"
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            />
+            <svg class="subscription-input-icon" width="20" height="20">
+              <use href="./img/svg-icon.svg#icon-input-error"></use>
+            </svg>
+          </label>
+        </div>
+        <div class="subscription-field-agree">
+          <input
+            class="subscription-input-checkbox visually-hidden"
+            type="checkbox"
+            name="user-agree"
+            id="user-agree"
+            value="true"
+          />
+          <label class="subscription-label-checkbox" for="user-agree">
+            <span class="checkbox-item">
+              <svg class="checkbox-icon" width="13" height="13">
+                <use href="./img/svg-icon.svg#icon-check"></use>
+              </svg>
+            </span>
+            Agree to subscribe to the newsletter
+          </label>
+        </div>
+
+        <button class="subscription-button" type="submit">Send</button>
+      </form>
+    </div>
+
+    <div class="subscription-image">
+      <picture>
+        <source
+          srcset="
+            ./img/subscription/subscribe-furniture.jpg    1x,
+            ./img/subscription/subscribe-furniture-2x.jpg 2x
+          "
+          media="(min-width: 1440px)"
+        />
+        <source
+          srcset="
+            ./img/subscription/subscribe-furniture-tab.jpg    1x,
+            ./img/subscription/subscribe-furniture-tab-2x.jpg 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./img/subscription/subscribe-furniture-mob.jpg    1x,
+            ./img/subscription/subscribe-furniture-mob-2x.jpg 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img
+          src="./img/subscription/subscribe-furniture.jpg"
+          alt="furniture"
+          width="704"
+        />
+      </picture>
+    </div>
   </div>
 </section>
