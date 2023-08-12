@@ -148,6 +148,15 @@
         margin-left: -6px;
     }
 
+    .navigation-footer{
+        font-size: 18px;
+    }
+
+    .icons-footer{
+        width: 40px;
+        height: 40px;
+    }
+
     .list-navigation-footer{
         padding: 8px;
         margin-top: 0;
@@ -171,6 +180,11 @@
         gap: 24px;
     }
 
+    .link-address-footer{
+        font-size: 19px;
+        letter-spacing: 0.19px;
+    }
+
     .mail{
         display: block;
         pointer-events: auto;
@@ -180,5 +194,15 @@
 
     .text-footer{
         margin-top: 163px;
+        font-size: 16px;
+        line-height: 1.25;
+    }
+}
+
+
+
+@media (min-width:1440px){
+    .container{
+        max-width: 1350px;
     }
 }
