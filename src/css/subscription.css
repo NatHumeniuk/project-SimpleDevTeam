@@ -23,6 +23,7 @@
 
 .subscription-field {
   margin-bottom: 20px;
+  position: relative;
 }
 
 .subscription-field-agree {
@@ -54,11 +55,17 @@
   outline: transparent;
 }
 
+.subscription-input:invalid:not(:placeholder-shown) + .subscription-input-icon {
+  fill: #e74a3b;
+}
+
 .subscription-label-checkbox {
   color: var(--dark-gray-color);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.5; /* 150% */
+  display: flex;
+  align-items: center;
 }
 
 .checkbox-item {
@@ -70,6 +77,14 @@
   align-items: center;
   fill: transparent;
   margin-right: 8px;
+}
+
+.subscription-input-icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  fill: transparent;
 }
 
 .subscription-input-checkbox:checked
@@ -95,13 +110,26 @@
   margin-bottom: 30px;
 }
 
+.subscription-button:hover,
+.subscription-button:focus {
+  background-color: #061835;
+}
+
 @media screen and (min-width: 375px) {
   .subscription-text {
     width: 343px;
   }
 
+  .subscription-field {
+    max-width: 343px;
+  }
+
   .subscription-input {
     max-width: 343px;
+  }
+
+  .subscription-label-checkbox {
+    font-size: 16px;
   }
 
   .subscription-image {
@@ -122,6 +150,10 @@
     font-size: 18px;
     width: 536px;
     margin-bottom: 20px;
+  }
+
+  .subscription-field {
+    max-width: 536px;
   }
 
   .subscription-input {
