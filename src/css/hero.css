@@ -10,6 +10,7 @@
   width: 285px;
   margin-bottom: 14px;
 }
+
 .p-hero {
   margin-bottom: 28px;
   color: var(--brand-dark-blue-color);
@@ -26,10 +27,84 @@
   width: 224px;
   padding: 12px 65px;
 }
+.hero-container {
+  height: 100vh;
+}
 .hero {
+  max-width: 470px;
   padding-left: 16px;
   background-image: url(../img/hero/hero_mob.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
-  height: 717px;
+  background-size: 100%;
+  height: 714px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .img_left,
+  .img_right {
+    display: none;
+  }
+}
+@media screen and (max-width: 317px) {
+  /* Зміна тексту на малих екранах */
+  .h1-hero {
+    width: 235px;
+  }
+  .p-hero {
+    color: #07001e;
+    width: 243px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    background-image: none;
+  }
+  .img_one {
+    padding-top: 275px;
+
+    overflow: hidden;
+  }
+  .background-image {
+    background-image: url('../img/hero/hero_left_tab.jpg'),
+      url('../img/hero/hero_right_tab.jpg');
+    background-size: 43%, 53%;
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+  }
+  .img_right {
+    padding-top: 61px;
+    display: flex;
+  }
+  .hero-container {
+    height: 100vh;
+  }
+  .hero-text {
+    position: absolute;
+  }
+  .h1-hero {
+    color: var(--blue-font, #0a224a);
+    font-family: Playfair Display;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    text-transform: uppercase;
+    padding-top: 64px;
+    width: 648px;
+  }
+  .p-hero {
+    width: 312px;
+    color: var(--brand-dark-blue-color);
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+  }
+  .p-hero,
+  .hero-buttom {
+    position: relative;
+    bottom: -425px;
+  }
 }
