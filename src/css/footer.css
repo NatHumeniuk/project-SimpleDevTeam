@@ -83,7 +83,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 0.16px;
+    letter-spacing: 0.01;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -113,7 +113,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1.17;
-    letter-spacing: 1.188px;
+    letter-spacing: 0.099;
     text-align: center;
     margin-top: 64px;
 }
@@ -134,6 +134,7 @@
     .footer{
         position: relative;
         max-width: 768px;
+        padding-bottom: 36px;
     }
 
     .container-footer{
@@ -185,7 +186,7 @@
 
     .link-address-footer{
         font-size: 19px;
-        letter-spacing: 0.19px;
+        letter-spacing: 0.01;
     }
 
     .mail-footer{
@@ -206,7 +207,6 @@
 
 @media (min-width:1440px){
     .footer{
-        padding-bottom: 36px;
         max-width: 1440px;
     }
 
@@ -214,14 +214,32 @@
         max-width: 1350px;
     }
 
+    .nav-icons-footer{
+        width: 100%;
+    }
+
+    .nav-footer{
+        align-items: center;
+        min-width: 854px;
+        justify-content: space-between;
+    }
+
+    .logo-footer{
+        margin-top: 0;
+    }
+
     .list-navigation-footer{
         flex-direction: row;
         gap: 30px;
-        margin-right: 286px;
+        margin: 0;
+        width: 518px;
     }
 
     .list-icons-footer{
         gap: 30px;
+        margin: 0;
+        justify-content: end;
+        width: 100%;
     }
 
     .address-footer{
