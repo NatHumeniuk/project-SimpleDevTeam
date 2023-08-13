@@ -86,8 +86,7 @@
   .size {
     max-width: 768px;
   }
-}
-@media screen and (min-width: 768px) {
+
   .menu {
     padding-top: 150px;
   }
@@ -112,7 +111,7 @@
     gap: 30px;
   }
 }
-@media screen and (min-width: 0px) and (max-width: 1440px) {
+@media screen and (min-width: 0px) and (max-width: 1439px) {
   .menu-heder,
   .container-menu-h {
     display: none;

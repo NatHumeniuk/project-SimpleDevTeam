@@ -9,6 +9,7 @@
   width: 285px;
   margin-bottom: 14px;
 }
+
 .hero-buttom:is(:hover, :focus) {
   background-color: #061835;
 }
@@ -85,8 +86,6 @@
     padding-top: 61px;
     display: flex;
   }
-  .hero-container {
-  }
 
   .h1-hero {
     color: var(--blue-font, #0a224a);
@@ -108,9 +107,12 @@
     font-weight: 400;
     line-height: 1.5; /* 150% */
   }
-  .p-hero,
-  .hero-buttom {
+  .p-hero {
     margin-top: 410px;
+  }
+
+  .hero-buttom {
+    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -136,7 +138,7 @@
   }
 
   .hero-text {
-    padding-top: 415px;
+    padding-top: 396px;
     background-image: url('../img/hero/hero_right.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
@@ -154,13 +156,15 @@
     }
   }
   .p-hero {
-    margin: 0;
-    margin-bottom: 30px;
+    margin-top: 0;
   }
   .hero {
     max-width: 100%;
   }
   .hero-container {
     position: absolute;
+  }
+  .hero-buttom {
+    margin-top: 0;
   }
 }
