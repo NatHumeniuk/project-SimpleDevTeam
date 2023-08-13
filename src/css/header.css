@@ -3,7 +3,7 @@
 }
 .header {
   background-color: #f7faff;
-  margin-bottom: 61px;
+
   height: 88px;
   display: flex;
   justify-content: space-between;
@@ -16,7 +16,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   width: 100%;
 }
 .icon {
@@ -28,6 +27,7 @@
   cursor: pointer;
 }
 .menu {
+  padding-top: 114px;
   z-index: 5;
   background-color: var(--white-color);
   display: flex;
@@ -43,7 +43,7 @@
   flex-direction: column;
   gap: 17px;
 }
-.container {
+.container-menu {
   max-width: 109px;
 }
 .menu-a {
@@ -84,4 +84,12 @@
   .size {
     max-width: 768px;
   }
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    padding-top: 150px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
 }
