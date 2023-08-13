@@ -97,7 +97,7 @@
     gap: 8px;
 }
 
-.mail{
+.mail-footer{
     display: none;
     pointer-events: none;
     cursor: default;
@@ -152,17 +152,17 @@
         font-size: 18px;
     }
 
-    .icons-footer{
-        width: 40px;
-        height: 40px;
-    }
-
     .list-navigation-footer{
         padding: 8px;
         margin-top: 0;
         margin-right: 64px;
         margin-left: auto;
         gap: 16px;
+    }
+
+    .icons-footer {
+        width: 40px;
+        height: 40px;
     }
 
     .address-footer{
@@ -185,7 +185,7 @@
         letter-spacing: 0.19px;
     }
 
-    .mail{
+    .mail-footer{
         display: block;
         pointer-events: auto;
         cursor: auto;
@@ -202,7 +202,42 @@
 
 
 @media (min-width:1440px){
+    .footer{
+        padding-bottom: 36px;
+    }
+
     .container{
         max-width: 1350px;
+    }
+
+    .list-navigation-footer{
+        flex-direction: row;
+        gap: 30px;
+        margin-right: 286px;
+    }
+
+    .list-icons-footer{
+        gap: 30px;
+    }
+
+    .address-footer{
+        position: static;
+        margin-top: 24px;
+        display: flex;
+    }
+
+    .tel-footer{
+        position: relative;
+        margin-top: 0;
+        margin-left: 87px;
+    }
+
+    .mail-footer{
+        position: absolute;
+        left: 224px;
+    }
+
+    .text-footer{
+        margin-top: 35px;
     }
 }
