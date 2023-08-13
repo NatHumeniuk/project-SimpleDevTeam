@@ -1,9 +1,11 @@
 .footer{
     padding: 36px 0 16px;
     background-color: var(--brand-dark-blue-color);
+    margin: 0 auto;
+    max-width: 375px;
 }
 
-.container{
+.container-footer{
     width: 100%;
     max-width: 375px;
     padding: 0 15px 0 15px;
@@ -131,9 +133,10 @@
 @media (min-width:768px){
     .footer{
         position: relative;
+        max-width: 768px;
     }
 
-    .container{
+    .container-footer{
         max-width: 734px;
     }
 
@@ -204,9 +207,10 @@
 @media (min-width:1440px){
     .footer{
         padding-bottom: 36px;
+        max-width: 1440px;
     }
 
-    .container{
+    .container-footer{
         max-width: 1350px;
     }
 
