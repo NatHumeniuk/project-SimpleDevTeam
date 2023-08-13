@@ -98,13 +98,18 @@
   .menu {
     display: none;
   }
+  .header-div {
+    padding-right: 60px;
+    max-width: 1440px;
+  }
   .size {
+    padding-left: 60px;
+
     max-width: 100%;
   }
   .menu-heder {
     display: flex;
     gap: 30px;
-    padding-right: 60px;
   }
 }
 @media screen and (min-width: 0px) and (max-width: 1440px) {

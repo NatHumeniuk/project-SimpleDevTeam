@@ -113,3 +113,54 @@
     margin-top: 410px;
   }
 }
+@media screen and (min-width: 1440px) {
+  .background-image {
+    background-image: url('../img/hero/hero_left.jpg'),
+      url('../img/hero/hero_central.jpg');
+    background-size: 32%, 65%;
+    background-position: left bottom, right bottom;
+    background-repeat: no-repeat, no-repeat;
+
+    max-width: 986px;
+  }
+  .size {
+    max-width: 1440px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .background-image {
+      background-image: url('../img/hero/hero-left-2x.jpg'),
+        url('../img/hero/hero-central-2x.jpg');
+    }
+  }
+
+  .hero-text {
+    padding-top: 415px;
+    background-image: url('../img/hero/hero_right.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    width: 312px;
+    height: 337px;
+    left: 1006px;
+    top: 7px;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .hero-text {
+      background-image: url('../img/hero/hero-right-2x.jpg');
+    }
+  }
+  .p-hero {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .hero {
+    max-width: 100%;
+  }
+  .hero-container {
+    position: absolute;
+  }
+}
