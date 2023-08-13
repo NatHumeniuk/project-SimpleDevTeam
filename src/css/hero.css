@@ -14,7 +14,6 @@
   background-color: #061835;
 }
 .p-hero {
-  margin-bottom: 28px;
   color: var(--brand-dark-blue-color);
   font-family: Roboto;
   font-size: 16px;
@@ -68,7 +67,7 @@
   .background-image {
     background-image: url('../img/hero/hero_left_tab.jpg'),
       url('../img/hero/hero_right_tab.jpg');
-    background-size: 43%, 53%;
+    background-size: 43%, 54%;
     background-position: left bottom, right top;
     background-repeat: no-repeat, no-repeat;
     height: 531px;
@@ -107,19 +106,18 @@
     font-weight: 400;
     line-height: 1.5; /* 150% */
   }
-  .p-hero {
+  .hero-text {
     margin-top: 410px;
   }
 
   .hero-buttom {
-    margin-top: 30px;
   }
 }
 @media screen and (min-width: 1440px) {
   .background-image {
     background-image: url('../img/hero/hero_left.jpg'),
       url('../img/hero/hero_central.jpg');
-    background-size: 32%, 65%;
+    background-size: 32%, 66%;
     background-position: left bottom, right bottom;
     background-repeat: no-repeat, no-repeat;
 
@@ -146,7 +144,7 @@
     width: 312px;
     height: 337px;
     left: 1006px;
-    top: 7px;
+    top: 0;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
@@ -155,7 +153,7 @@
       background-image: url('../img/hero/hero-right-2x.jpg');
     }
   }
-  .p-hero {
+  .hero-text {
     margin-top: 0;
   }
   .hero {
@@ -165,6 +163,6 @@
     position: absolute;
   }
   .hero-buttom {
-    margin-top: 0;
+    margin-top: 35px;
   }
 }
