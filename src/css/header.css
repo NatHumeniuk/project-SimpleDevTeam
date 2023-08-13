@@ -1,13 +1,12 @@
-.size {
-  max-width: 470px;
-}
 .header {
   background-color: #f7faff;
-
-  height: 88px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.size {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .header .icon {
   box-sizing: content-box;
