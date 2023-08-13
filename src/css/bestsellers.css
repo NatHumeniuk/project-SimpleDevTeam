@@ -72,7 +72,7 @@
     margin-bottom: 15px;
   }
 
-  .img-wrap {
+  .sell-list {
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
@@ -99,6 +99,8 @@
 
   .sell-list {
     display: flex;
+    column-gap: 20px;
+    row-gap: 30px;
   }
 
   .img-title {
@@ -107,12 +109,11 @@
     margin-bottom: 0px;
   }
 
-  .sell-item {
-    flex-basis: calc((100% - 20px) / 2);
+  .content {
+    display: flex;
   }
 
-  .img-wrap {
-    column-gap: 20px;
-    row-gap: 30px;
+  .sell-item {
+    flex-basis: calc((100% - 20px) / 2);
   }
 }
