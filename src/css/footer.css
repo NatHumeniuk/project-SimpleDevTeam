@@ -225,7 +225,8 @@
     }
 
     .logo-footer{
-        margin-top: 0;
+        margin: 0;
+        width: 120px;
     }
 
     .list-navigation-footer{
