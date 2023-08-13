@@ -1,0 +1,121 @@
+.price-container {
+    padding: 64px 16px;
+}
+
+.price-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.price-list .price-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.price-subtitle {
+    color: var(--brand-dark-blue-color);
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.price-value {
+    color: var(--brand-dark-blue-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.price-item {
+    position: relative;
+    display: inline-block;
+}
+
+.price-item .price-subtitle {
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.price-item:hover .price-subtitle {
+    transform: translateX(20px);
+    padding-left: 20px;
+}
+
+.underline {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: var(--brand-dark-blue-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.31 ease-in-out;
+    z-index: 1;
+}
+
+.price-item:hover .underline {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+@media screen and (min-width: 375px) {
+    .price-item .line {
+        width: 344px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .price-item .line {
+        width: 704px;
+    }
+
+    .price-subtitle {
+        color: var(--brand-dark-blue-color);
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    .price-value {
+        color: var(--brand-dark-blue-color);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .price-container {
+        width: 1096px;
+        gap: 100px;
+    }
+    .price-item .line {
+        width: 1096 px;
+    }
+    .price-subtitle {
+        color: var(--brand-dark-blue-color);
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 1.5;
+        text-transform: uppercase;
+        text-align: left;
+    }
+
+    .price-value {
+        color: var(--brand-dark-blue-color);
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: right;
+    }
+}
