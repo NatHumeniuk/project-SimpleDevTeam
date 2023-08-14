@@ -30,6 +30,7 @@
   margin-bottom: 28px;
 }
 .hero-buttom {
+  position: relative;
   background-color: var(--brand-dark-blue-color);
   color: var(--white-color);
   display: block;
