@@ -122,7 +122,6 @@
 @media (min-width: 768px) {
   .footer {
     position: relative;
-    max-width: 768px;
     padding-bottom: 36px;
   }
 
@@ -188,10 +187,6 @@
 }
 
 @media (min-width: 1440px) {
-  .footer {
-    max-width: 1440px;
-  }
-
   .nav-icons-footer {
     width: 100%;
   }
