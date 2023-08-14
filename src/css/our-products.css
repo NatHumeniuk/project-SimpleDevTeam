@@ -1,6 +1,5 @@
-.container-our-products {
-  max-width: 375px;
-  margin: 0 auto;
+.our-products {
+  padding-bottom: 64px;
 }
 .products-title {
   color: var(--brand-dark-blue-color);
@@ -30,10 +29,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container-our-products {
-    max-width: 736px;
+  .our-products {
+    padding-bottom: 100px;
   }
-
   .products-title {
     font-size: 32px;
     line-height: 1.4;
@@ -58,15 +56,10 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .container-our-products {
-    max-width: 1352px;
-  }
   .container-pro-desktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 100px;
-    margin-top: 100px;
   }
   .product-list {
     gap: 24px;
