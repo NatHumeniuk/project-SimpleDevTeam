@@ -1,133 +1,133 @@
 .price-content {
-    margin: 0 auto;
-    padding: 64px 16px;
+  margin: 0 auto;
+  padding: 64px 0;
 }
 
 .price-list {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .price-item {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    border-top: 1px solid #ccc;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--brand-dark-blue-color);
 }
 
 .item-last {
-    border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--brand-dark-blue-color);
 }
 
 .item-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: relative;
-    padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding: 30px 0;
 }
 
 .price-subtitle {
-    color: var(--brand-dark-blue-color);
-    font-size: 28px;
-    font-weight: 400;
-    line-height: 1.5;
-    text-transform: uppercase;
-    transition: transform 0.3s ease-in-out, padding-left 0.3s ease-in-out;
-    position: relative;
-    transform-origin: left;
+  color: var(--brand-dark-blue-color);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-transform: uppercase;
+  transition: transform 0.3s ease-in-out, padding-left 0.3s ease-in-out;
+  position: relative;
+  transform-origin: left;
 }
 
-.price-subtitle:before {
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 2px;
-    background-color: var(--brand-dark-blue-color);
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%) scaleX(0);
-    transition: transform 0.3s ease-in-out;
-    transform-origin: left;
+.price-subtitle::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: var(--brand-dark-blue-color);
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) scaleX(0);
+  transition: transform 0.3s ease-in-out;
+  transform-origin: left;
 }
 
 .price-item:hover .price-subtitle {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
-.price-item:hover .price-subtitle:before {
-    transform: translateY(-50%) scaleX(1);
+.price-item:hover .price-subtitle::before {
+  transform: translateY(-50%) scaleX(1);
 }
 
 .price-value {
-    color: var(--brand-dark-blue-color);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.5;
+  color: var(--brand-dark-blue-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
 }
 
 .long-line {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 2px;
-    background-color: var(--brand-dark-blue-color);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 2px;
+  background-color: var(--brand-dark-blue-color);
 }
 
 .price-item:hover .long-line {
-    transform: translateX(-20px);
-    width: calc(100% + 20px);
+  transform: translateX(-20px);
+  width: calc(100% + 20px);
 }
 
 /* Media Queries */
 
 @media screen and (min-width: 375px) {
-    .price-item {
-        width: 100%;
-    }
+  .price-item {
+    width: 100%;
+  }
 
-    .price-content {
-        max-width: 344px;
-    }
+  .price-content {
+    max-width: 344px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .price-item {
-        width: 100%;
-    }
+  .price-item {
+    width: 100%;
+  }
 
-    .price-content {
-        max-width: 704px;
-    }
+  .price-content {
+    max-width: 704px;
+  }
 
-    .price-subtitle {
-        font-size: 32px;
-        line-height: 1.4;
-    }
+  .price-subtitle {
+    font-size: 32px;
+    line-height: 1.4;
+  }
 
-    .price-value {
-        font-size: 18px;
-    }
+  .price-value {
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .price-item {
-        width: 100%;
-    }
+  .price-item {
+    width: 100%;
+  }
 
-    .price-content {
-        max-width: 1096px;
-    }
+  .price-content {
+    max-width: 1096px;
+  }
 
-    .price-subtitle {
-        font-size: 32px;
-        line-height: 1.4;
-    }
+  .price-subtitle {
+    font-size: 32px;
+    line-height: 1.4;
+  }
 
-    .price-value {
-        font-size: 18px;
-    }
+  .price-value {
+    font-size: 18px;
+  }
 }
