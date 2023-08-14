@@ -1,4 +1,4 @@
-(() => {
+(() => { 
   const refs = {
     menuToggle: document.querySelector('[data-menu-toggle]'),
     Menu: document.querySelector('[data-menu]'),
