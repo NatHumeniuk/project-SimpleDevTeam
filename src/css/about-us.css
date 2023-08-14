@@ -1,7 +1,6 @@
 .about-us {
   background-color: var(--light-blue-color);
   padding-top: 64px;
-  padding-bottom: 64px;
 }
 .title-about-us {
   display: flex;
