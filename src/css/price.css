@@ -1,8 +1,7 @@
-.price-content {
-  margin: 0 auto;
-  padding: 64px 0;
+.price {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
-
 .price-list {
   list-style-type: none;
   padding: 0;
@@ -85,22 +84,18 @@
 /* Media Queries */
 
 @media screen and (min-width: 375px) {
+  .price {
+    padding-top: 0;
+    padding-bottom: 100px;
+  }
   .price-item {
     width: 100%;
-  }
-
-  .price-content {
-    max-width: 344px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .price-item {
     width: 100%;
-  }
-
-  .price-content {
-    max-width: 704px;
   }
 
   .price-subtitle {
@@ -114,12 +109,11 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .price-content {
+    max-width: 1216px;
+  }
   .price-item {
     width: 100%;
-  }
-
-  .price-content {
-    max-width: 1096px;
   }
 
   .price-subtitle {

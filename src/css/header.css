@@ -6,9 +6,6 @@
   padding-top: 28px;
   padding-bottom: 28px;
 }
-.size {
-  max-width: 375px;
-}
 .header-div {
   margin: 0 auto;
   display: flex;
@@ -91,9 +88,7 @@
   .header {
     padding-bottom: 27px;
   }
-  .size {
-    max-width: 768px;
-  }
+
   .icon-logo {
     width: 127px;
     padding: 0;
@@ -123,9 +118,7 @@
     padding-top: 26px;
     padding-bottom: 26px;
   }
-  .size {
-    max-width: 1440px;
-  }
+
   .menu-heder {
     display: flex;
     margin-left: auto;
