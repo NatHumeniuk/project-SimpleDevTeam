@@ -50,6 +50,7 @@
   max-width: 100%;
 }
 .menu-ul {
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -102,6 +103,7 @@
     font-size: 18px;
   }
   .menu-ul {
+    padding-bottom: 100px;
     gap: 30px;
   }
   .menu {
