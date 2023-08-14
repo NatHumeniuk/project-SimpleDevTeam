@@ -1,5 +1,5 @@
 
-.container {
+.container-mob {
   max-width: 375px;
   margin: 0 auto;
 }
@@ -74,7 +74,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .container-mob {
     max-width: 704px;
   }
   .about-us-container {
@@ -107,7 +107,7 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .container {
+  .container-mob {
     max-width: 1320px;
   }
   .about-us-container {
