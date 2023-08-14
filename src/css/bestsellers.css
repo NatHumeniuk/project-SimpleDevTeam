@@ -11,11 +11,28 @@
   text-align: center;
   margin-bottom: 21px;
 }
+
 .img-title {
   margin-bottom: 30px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
 }
+
+.img-title:hover {
+  transform: scale(1.15);
+}
+
 .sell-img {
   margin-bottom: 14px;
+}
+
+.sell-item {
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sell-item:hover {
+  transform: scale(1.15);
 }
 
 .sell-item-head {
@@ -57,6 +74,10 @@
 
   .img-title {
     margin-bottom: 32px;
+  }
+
+  .img-title:hover {
+    transform: scale(1.08);
   }
 
   .sell-img {
