@@ -6,9 +6,6 @@
   padding-top: 28px;
   padding-bottom: 28px;
 }
-.size {
-  max-width: 375px;
-}
 .header-div {
   margin: 0 auto;
   display: flex;
@@ -53,6 +50,7 @@
   max-width: 100%;
 }
 .menu-ul {
+  padding-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,9 +89,7 @@
   .header {
     padding-bottom: 27px;
   }
-  .size {
-    max-width: 768px;
-  }
+
   .icon-logo {
     width: 127px;
     padding: 0;
@@ -107,6 +103,7 @@
     font-size: 18px;
   }
   .menu-ul {
+    padding-bottom: 100px;
     gap: 30px;
   }
   .menu {
@@ -123,9 +120,7 @@
     padding-top: 26px;
     padding-bottom: 26px;
   }
-  .size {
-    max-width: 1440px;
-  }
+
   .menu-heder {
     display: flex;
     margin-left: auto;

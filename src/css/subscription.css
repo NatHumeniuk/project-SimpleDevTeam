@@ -1,7 +1,7 @@
-.container {
-  padding: 64px 16px;
+.subscription {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
-
 .subscription-content {
   margin-bottom: 30px;
 }
@@ -139,10 +139,10 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding: 100px 16px;
+  .subscription {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
-
   .subscription-title {
     margin-bottom: 30px;
     font-size: 32px;
@@ -185,12 +185,11 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
+  .subscription {
     padding-bottom: 86px;
   }
-
   .desktop {
-    width: 1096px;
+    max-width: 1216px;
     display: flex;
     gap: 100px;
   }
