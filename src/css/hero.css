@@ -77,7 +77,7 @@
   .background-image {
     background-image: url(../img/hero/hero_left_tab.jpg),
       url(../img/hero/hero_right_tab.jpg);
-    background-size: 43%, 54%;
+    background-size: 44%, 51.5%;
     background-position: left bottom, right top;
     background-repeat: no-repeat, no-repeat;
     height: 531px;
