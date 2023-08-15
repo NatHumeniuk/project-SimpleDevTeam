@@ -35,7 +35,7 @@
   color: var(--white-color);
   display: block;
   max-width: 224px;
-  height: 48px;
+
   text-align: center;
   border: none;
   font-size: 16px;
@@ -75,12 +75,17 @@
     padding-top: 275px;
   }
   .background-image {
+    align-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row;
+    display: flex;
+    height: 760px;
     background-image: url(../img/hero/hero_left_tab.jpg),
       url(../img/hero/hero_right_tab.jpg);
     background-size: 44%, 51.5%;
-    background-position: left bottom, right top;
+    background-position: 0 200px, right top;
     background-repeat: no-repeat, no-repeat;
-    height: 531px;
     width: 100%;
   }
   @media (min-device-pixel-ratio: 2),
@@ -105,13 +110,9 @@
     font-size: 18px;
     margin-bottom: 30px;
   }
-  .hero-text {
-    margin-top: 410px;
-  }
 
   .hero-buttom {
     font-size: 18px;
-    height: 50px;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -119,7 +120,7 @@
     background-image: url(../img/hero/hero_left.jpg),
       url(../img/hero/hero_central.jpg);
     background-size: 32%, 66%;
-    background-position: left bottom, right bottom;
+
     background-repeat: no-repeat, no-repeat;
 
     max-width: 986px;
@@ -138,7 +139,7 @@
   }
 
   .hero-text {
-    padding-top: 396px;
+    padding-top: 400px;
     background-image: url(../img/hero/hero_right.jpg);
     background-repeat: no-repeat;
     background-size: 100%;

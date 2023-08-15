@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
     menu.classList.toggle("is-hidden");
     document.body.classList.toggle("no-scroll");
     menuButton.classList.toggle("open"); // Добавляем/удаляем класс для смены бургера на крестик и наоборот
+    
+    // Добавляем/удаляем класс для анимации выезда меню
+    menu.classList.toggle("slide-out-right");
   });
 
   menuItems.forEach((menuItem, index) => {
@@ -24,7 +27,9 @@ document.addEventListener("DOMContentLoaded", function () {
         top: targetOffset,
         behavior: "smooth"
       });
+      
+      // Удаляем класс анимации выезда меню после клика
+      menu.classList.remove("slide-out-rightr");
     });
   });
 });
-
