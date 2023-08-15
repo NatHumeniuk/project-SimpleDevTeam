@@ -6,33 +6,32 @@ document.addEventListener('DOMContentLoaded', function () {
   let animationActive = false;
   let animationStartTime;
 
-  function startCounter(targetH4, finalValue, step, isPercentage) {
+  function startCounter(targetH3, finalValue, step, isPercentage, showSymbol) {
     let interval = setInterval(() => {
       const currentTime = Date.now();
       const elapsedTime = currentTime - animationStartTime;
       if (elapsedTime <= 3500) {
-        // Час анімації (3500 мс)
         const progress = elapsedTime / 3500;
         let currentValue = Math.round(progress * (finalValue - step));
-        if (currentValue < 1) {
-          currentValue = 1;
+        if (currentValue < step) {
+          currentValue = step;
         }
-        targetH4.textContent =
-          currentValue === 1
-            ? `${currentValue}+`
+        targetH3.textContent =
+          currentValue === step
+            ? `${currentValue}${showSymbol}`
             : isPercentage
-            ? `${currentValue}%`
-            : `${currentValue}+`;
+            ? `${currentValue}${showSymbol}`
+            : `${currentValue}${showSymbol}`;
       } else {
-        targetH4.textContent =
-          finalValue === 1
-            ? `${finalValue}+`
+        targetH3.textContent =
+          finalValue === step
+            ? `${finalValue}${showSymbol}`
             : isPercentage
-            ? `${finalValue}%`
-            : `${finalValue}+`;
+            ? `${finalValue}${showSymbol}`
+            : `${finalValue}${showSymbol}`;
         clearInterval(interval);
       }
-    }, 50); // Швидкість зміни значення (50 мс)
+    }, 50);
   }
 
   function handleScroll() {
@@ -48,17 +47,21 @@ document.addEventListener('DOMContentLoaded', function () {
         let finalValue;
         let step = 1;
         let isPercentage = false;
+        let showSymbol = '';
         if (index === 0) {
           finalValue = 5;
+          showSymbol = item.getAttribute('data-show-symbol');
         } else if (index === 1) {
           finalValue = 100;
           step = 10;
           isPercentage = true;
+          showSymbol = item.getAttribute('data-show-symbol');
         } else if (index === 2) {
           finalValue = 500;
           step = 100;
+          showSymbol = item.getAttribute('data-show-symbol');
         }
-        startCounter(item, finalValue, step, isPercentage);
+        startCounter(item, finalValue, step, isPercentage, showSymbol);
       });
     } else if (
       (aboutSectionRect.top > windowHeight || aboutSectionRect.bottom < 0) &&
