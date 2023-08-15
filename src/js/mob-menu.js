@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
       });
       
       // Удаляем класс анимации выезда меню после клика
-      menu.classList.remove("slide-out-rightr");
+      menu.classList.remove("slide-out-right");
     });
   });
 });
