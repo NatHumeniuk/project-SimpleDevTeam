@@ -1,14 +1,13 @@
-
-.container {
-  max-width: 375px;
-  margin: 0 auto;
+.about-us {
+  background-color: var(--white-color);
+}
+.about-us .container {
+  padding-left: 0;
+  padding-right: 0;
 }
 .about-us-container {
   background-color: var(--light-blue-color);
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 64px;
-  padding-bottom: 64px;
+  padding: 64px 16px;
 }
 .title-about-us {
   display: flex;
@@ -74,14 +73,18 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    max-width: 704px;
+  .about-us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: var(--white-color);
+  }
+  .about-us .container {
+    padding-left: 32px;
+    padding-right: 32px;
   }
   .about-us-container {
-    padding-left: 64px;
-    padding-right: 64px;
-    padding-top: 36px;
-    padding-bottom: 36px;
+    background-color: var(--light-blue-color);
+    padding: 36px 64px;
     margin-bottom: 30px;
   }
 
@@ -98,6 +101,9 @@
   .taxt-about-us-item {
     font-size: 18px;
   }
+  .about-us-results {
+    margin-bottom: 0;
+  }
   .list-about-us {
     flex-direction: row;
     gap: 33px;
@@ -107,8 +113,12 @@
   }
 }
 @media screen and (min-width: 1440px) {
-  .container {
-    max-width: 1320px;
+  .about-us {
+    padding-top: 0;
+  }
+  .about-us .container {
+    padding-left: 60px;
+    padding-right: 60px;
   }
   .about-us-container {
     padding-left: 69px;
@@ -121,8 +131,6 @@
     display: flex;
     align-items: center;
     gap: 24px;
-    margin-bottom: 100px;
-    margin-top: 100px;
   }
 
   .list-about-us {
