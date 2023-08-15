@@ -125,7 +125,7 @@
     0ms 1 normal both running;
 }
 
-@-webkit-keyframes slide-out-right {
+@keyframes slide-out-right {
   0% {
     transform: translateX(-50%);
     transform: translateX(0%);
