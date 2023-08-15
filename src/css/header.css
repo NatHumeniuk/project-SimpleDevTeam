@@ -108,8 +108,13 @@
 .menu-a:is(:hover, :focus) {
   color: #061835;
   font-size: 22px;
+  transition: font-size 0.5s ease;
 }
-
+.menu-a:not(:hover, :focus) {
+  color: #061835;
+  font-size: 18px;
+  transition: font-size 0.5s ease;
+}
 .is-hidden {
   display: none;
 }
@@ -161,6 +166,10 @@
   .icon,
   .menu {
     display: none;
+  }
+  .menu-a:is(:hover, :focus) {
+    color: #061835;
+    font-size: 18px;
   }
   .header {
     padding-top: 26px;
