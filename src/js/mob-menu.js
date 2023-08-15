@@ -1,64 +1,35 @@
-(() => {
-  const refs = {
-    menuToggle: document.querySelector('[data-menu-toggle]'),
-    Menu: document.querySelector('[data-menu]'),
-  };
+document.addEventListener("DOMContentLoaded", function () {
+  const menuButton = document.querySelector("[data-menu-toggle]");
+  const menu = document.querySelector("[data-menu]");
+  const menuItems = menu.querySelectorAll(".menu-li");
+  const sections = document.querySelectorAll("section"); 
 
-  refs.menuToggle.addEventListener('click', toggleMenu);
-
-  function toggleMenu() {
-    const targetMenu = refs.menuToggle.getAttribute('data-menu-target');
-
-    if (refs.Menu.classList.contains('is-hidden')) {
-      // Відкриття меню
-      refs.Menu.classList.remove('is-hidden');
-      document.body.classList.add('no-scroll');
-      refs.Menu.classList.add('slide-out-right');
-      // Змінити іконку на хрестик
-      refs.menuToggle
-        .querySelector('use')
-        .setAttribute('href', '../img/svg-icon.svg#icon-close');
-    } else {
-      // Закриття меню без анімації
-      refs.Menu.classList.add('is-hidden');
-      document.body.classList.remove('no-scroll');
-      // Змінити іконку на бургер
-      refs.menuToggle
-        .querySelector('use')
-        .setAttribute('href', '../img/svg-icon.svg#icon-burger');
-    }
-  }
-})();
-(() => {
-  const refs = {
-    menuToggle: document.querySelector('[data-menu-toggle]'),
-    menu: document.querySelector('[data-menu]'),
-    menuLinks: document.querySelectorAll('[data-menu] a'), // Змінили селектор
-  };
-
-  refs.menuToggle.addEventListener('click', toggleMenu);
-
-  refs.menuLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      // Змінили обробник події
-      closeMenu(); // Викликаємо функцію закриття меню при кліку на посилання
-    });
+  menuButton.addEventListener("click", function () {
+    menu.classList.toggle("is-hidden");
+    document.body.classList.toggle("no-scroll");
+    menuButton.classList.toggle("open"); // Добавляем/удаляем класс для смены бургера на крестик и наоборот
+    
+    // Добавляем/удаляем класс для анимации выезда меню
+    menu.classList.toggle("slide-out-right");
   });
 
-  function toggleMenu() {
-    if (refs.menu.classList.contains('is-hidden')) {
-      // Відкриття меню...
-    } else {
-      // Закриття меню...
-    }
-  }
+  menuItems.forEach((menuItem, index) => {
+    menuItem.addEventListener("click", function (event) {
+      event.preventDefault();
+      menu.classList.add("is-hidden");
+      document.body.classList.remove("no-scroll");
+      menuButton.classList.remove("open"); // Возвращаем бургер при клике на пункт меню
+      
+      const targetSection = sections[index];
+      const targetOffset = targetSection.offsetTop;
 
-  function closeMenu() {
-    // Закриття меню
-    refs.menu.classList.add('is-hidden');
-    document.body.classList.remove('no-scroll');
-    refs.menuToggle
-      .querySelector('use')
-      .setAttribute('href', '../img/svg-icon.svg#icon-burger');
-  }
-})();
+      window.scrollTo({
+        top: targetOffset,
+        behavior: "smooth"
+      });
+      
+      // Удаляем класс анимации выезда меню после клика
+      menu.classList.remove("slide-out-right");
+    });
+  });
+});
