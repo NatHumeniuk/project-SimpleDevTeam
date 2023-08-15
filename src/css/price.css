@@ -41,7 +41,7 @@
 .price-subtitle::before {
   content: '';
   position: absolute;
-  width: 20px;
+  width: 28px;
   height: 2px;
   background-color: var(--brand-dark-blue-color);
   top: 50%;
@@ -52,7 +52,7 @@
 }
 
 .price-item:hover .price-subtitle {
-  padding-left: 20px;
+  padding-left: 35px;
 }
 
 .price-item:hover .price-subtitle::before {
