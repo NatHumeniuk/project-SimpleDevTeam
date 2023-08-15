@@ -109,6 +109,8 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5; /* 150% */
+  border: none;
+  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscription-button:hover,
