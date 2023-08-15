@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let animationActive = false;
   let animationStartTime;
 
-  function startCounter(targetH4, finalValue, step, isPercentage) {
+  function startCounter(targetH3, finalValue, step, isPercentage) {
     let interval = setInterval(() => {
       const currentTime = Date.now();
       const elapsedTime = currentTime - animationStartTime;
@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
         if (currentValue < 1) {
           currentValue = 1;
         }
-        targetH4.textContent =
+        targetH3.textContent =
           currentValue === 1
             ? `${currentValue}+`
             : isPercentage
             ? `${currentValue}%`
             : `${currentValue}+`;
       } else {
-        targetH4.textContent =
+        targetH3.textContent =
           finalValue === 1
             ? `${finalValue}+`
             : isPercentage
@@ -44,20 +44,10 @@ document.addEventListener('DOMContentLoaded', function () {
     ) {
       animationActive = true;
       animationStartTime = Date.now();
-      titleItems.forEach((item, index) => {
-        let finalValue;
-        let step = 1;
-        let isPercentage = false;
-        if (index === 0) {
-          finalValue = 5;
-        } else if (index === 1) {
-          finalValue = 100;
-          step = 10;
-          isPercentage = true;
-        } else if (index === 2) {
-          finalValue = 500;
-          step = 100;
-        }
+      titleItems.forEach(item => {
+        const finalValue = parseInt(item.getAttribute('data-final-value'));
+        const step = parseInt(item.getAttribute('data-step')) || 1;
+        const isPercentage = item.getAttribute('data-is-percentage') === 'true';
         startCounter(item, finalValue, step, isPercentage);
       });
     } else if (
