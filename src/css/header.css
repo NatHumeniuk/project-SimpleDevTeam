@@ -5,7 +5,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  padding: 10px;
+  padding: 6px;
 }
 
 .icon-burger {
@@ -77,12 +77,6 @@
   background-color: var(--white-color);
 }
 
-.btn-burger {
-  display: block;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-}
 .menu-toggle {
   display: block;
   margin: 0;
@@ -146,6 +140,9 @@
     padding: 0;
     margin: 0;
   }
+  .btn-burger {
+    padding: 10px;
+  }
   .menu-toggle {
     width: 40px;
     height: 40px;
@@ -169,11 +166,11 @@
   }
   .menu-a:is(:hover, :focus) {
     color: #061835;
-    font-size: 18px;
+    font-weight: 500;
   }
   .header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 34px;
+    padding-bottom: 34px;
   }
 
   .menu-heder {

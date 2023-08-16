@@ -128,6 +128,7 @@
   .hero {
     margin: 0 auto;
     max-width: 1440px;
+    height: 714px;
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
