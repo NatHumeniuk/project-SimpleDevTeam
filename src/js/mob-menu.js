@@ -7,13 +7,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const bestsellers = document.querySelector('.bestsellers');
   const reviews = document.querySelector('.reviews');
   const ourProducts = document.querySelector('.our-products');
-  const subscription = document.querySelector('.subscription');
+  const footer = document.querySelector('.footer');
 
   aboutUs.setAttribute('id', 'about_u');
   bestsellers.setAttribute('id', 'beteller');
   reviews.setAttribute('id', 'review');
   ourProducts.setAttribute('id', 'our_product');
-  subscription.setAttribute('id', 'contact');
+  footer.setAttribute('id', 'contact');
 
   menuButton.addEventListener('click', function () {
     menu.classList.toggle('is-hidden');
